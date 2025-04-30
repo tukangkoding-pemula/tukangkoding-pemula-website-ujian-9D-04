@@ -1,106 +1,265 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     margin:0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(SourHaus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 header{
     justify-content: space-between;
-    background-color: #ffffff;
-    display: flex;
+    background-color: #6d4b18;
     padding: 10px;
+    top: 0%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    position: fixed;
+    border-radius: 0px;
+    z-index: 1;
+    transition: all 0.6s ease;
 }
 nav a{
     float: left;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 30px;
     transition: all 0.5s ease;
 }
 nav a:hover{
-    background-color: rgb(248, 217, 217);
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     scale: 1.15;
 }
 nav div {
     list-style: none;
     display: flex;
-    gap: 6px;
+    gap: 9px;
 }
-p{ 
-    color: rgb(0, 0, 0);
+.logo{ 
+    color: rgb(255, 255, 255);
     padding-left: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    transition: all 0.2s ease;
-}
-p:hover{
-    scale: 1.2;
+    transition: all 0.6s ease;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.logo:hover{
+    scale: 1.5;
     cursor: default;    
 }
-img{
-    height: 900px;
-    width: auto;
+.img.background{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section.home .welcome{
+  text-align: center;
+  color: aliceblue;
+  margin: auto;
+  width: 100%;
+  padding-top: 110px;
+  font-size: xx-large;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+  animation: welcome 2s;
+}
+@keyframes welcome{
+  0%{
+    transform: translateY(-155px);
+  }
+}
+section.home .yap{
+  text-align: center;
+  color: aliceblue;
+  margin: auto;
+  padding-bottom: 50px;
+  font-size: larger;
+}
+section.home a{
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 0px 0px 3px;
+  border-radius: 20px;
+}
+section.home a:hover{
+  transition: 0.8s;
+  background-color: rgb(31, 31, 31);
+}
+section.home .buinow{
+  text-align: center;
+  padding-bottom: 110px;
 }
 .menu a{
     text-decoration: none;
-    color: rgb(71, 69, 69);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
-    transition: all 0.6s ease;
+    transition: all 0.8s ease;
 }
 .menu a:hover {
-    color:white;
+    color:rgb(0, 0, 0);
     background: rgb(87, 85, 85);
     scale: 1.1;
 }
 .icon a{
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
+    color: rgb(255, 255, 255);
     border-radius: 50px;
-    transition: all 0.6s ease;
+    font-weight: bold;
+    transition: all 0.8s ease;
 }
-
 .icon a:hover {
-    color:rgb(71, 69, 69);
-    background: white;
+    color:rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     scale: 1.1;
 }
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 40px 40px 40px;
   }
-  
-  .card-1 {
-    margin-top: 20px;
-    width: 350px;
-    height: 560px;
-    background-color: rgb(59, 59, 59);
-    border-radius: 20px;
-  }
-  .image {
-    display: flex;
-    padding-top: 25px;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image img {
-    border-radius: 20px;
-    width: 280px;
-    height: 280px;
-    transition: all 0.2s ease;
-  }
-  
-  .image img:hover {
+section.about{
+    background-color: #6d4b18;
+    height: 600px;
+    text-align: center;
+  } 
+.h2-title{
+  padding-top: 15px;
+  color: rgb(255, 228, 160);
+}
+.text-intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: larger;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 24px;
+  color: beige;
+}
+section.about img{  
+  height: 470px;
+  width: 340px;
+  object-fit: contain;
+  padding-top: 45px;
+  flex-shrink: 0;
+}
+.card{
+    width: 210px;
+    height: 350px;
+    background-color: rgba(242, 242, 242, 0.55);
+    border-radius: 5px;
+    padding: 15px;
+    padding-bottom: 60px;
+    margin :12px;
+    justify-content: space-between;
+}
+.card:hover{
     scale: 1.1;
     cursor: default;
+    transition: all 0.8s ease;
+}
+.title{
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 3px rgb(230, 230, 230);
+    text-align: center;
+    font-size: medium;
+}
+.deskripsi {
+    padding-bottom: 3px;  
+    padding-top: 3px;
+    text-align: center;
+    font-size: small; 
+    box-shadow: 0px 0px 8px;
+    border-color: rgb(182, 176, 150);
+    background-color: rgb(222, 202, 181);
+}
+.price{
+    color: rgb(220, 173, 63);
+    padding-top: 11px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
-  
+section.product{
+    height: 1100px;
+}
+section.product .container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.product .container .card a{
+    color: black;
+    padding: 5px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px;
+    border-radius: 20px;
+}
+.bread img {
+    border-radius: 0px;
+    justify-content: center;
+    padding-left: 25px;
+    padding-top: 20px;
+    width: 150px;
+    height: 130px;
+    transition: all 1s ease;
+  }
+  section.address{
+    background-color: #6d4b18;
+    height: 600px;
+    text-align: center;
+  }
+  section.address .bakery{
+    padding-top: 100px;
+  }
+  section.address .info{
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    padding-top: 20px;
+    font-size: larger;
+    color: bisque;
+  }
+  footer{
+    background-color: #000000;
+    height: 50px;
+}
+footer .medsos{
+    text-align: center;
+    padding-top: 10px;
+}
+footer .medsos a{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+}
+footer .medsos a:hover{
+    background-color: rgb(62, 61, 61);
+    transition: 0.5s; 
+}
